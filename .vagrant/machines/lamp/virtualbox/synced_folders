@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/website":{"owner":"www-data","group":"www-data","create":true,"guestpath":"/var/www/website","hostpath":"/Users/Fuzzy/electron4/src","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Fuzzy/electron4","disabled":false}}}
