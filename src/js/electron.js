@@ -31,11 +31,12 @@ Electron = (function () {
 				value: '',
 			},
 			success: function(data) {
-				callback(data);
+				params.callback(data);
 			},
 			error: function(e) {
-				str = e.responseText.substring(0, str.length - 4);
-				callback(JSON.parse(str));
+				var str = e.responseText;
+				str = str.substring(0, str.length - 4);
+				params.callback(JSON.parse(str));
 			}
 		});
 	};
@@ -63,11 +64,12 @@ Electron = (function () {
 				value: params.value,
 			},
 			success: function(data) {
-				callback(data);
+				params.callback(data);
 			},
 			error: function(e) {
-				str = e.responseText.substring(0, str.length - 4);
-				callback(JSON.parse(str));
+				var str = e.responseText;
+				str = str.substring(0, str.length - 4);
+				params.callback(JSON.parse(str));
 			}
 		});
 
